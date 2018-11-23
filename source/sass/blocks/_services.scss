@@ -1,0 +1,385 @@
+.services__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 74px;
+  background-color: #faf8fb;
+  position: relative;
+
+  &::before {
+    content: "";
+    top: 10px;
+    left: 350px;
+    width: 11px;
+    height: 130px;
+    position: absolute;
+    background-image: url("../img/pin.png") center no-repeat;
+  }
+}
+
+.services__wrapper-text {
+  padding: 0 15px;
+}
+
+.services__title {
+  margin: 0;
+  padding: 66px 0;
+  padding-bottom: 40px;
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #7f38bd;
+}
+
+.services__numder {
+  top: 91px;
+  left: 39px;
+  display: block;
+  position: absolute;
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 200px;
+  font-weight: 900;
+  color: #faf8fb;
+  text-shadow: 0px 0px 21px #0000001e;
+}
+
+.services__offer {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 39px;
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #383d52;
+}
+
+.services__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 14px;
+  list-style: none;
+}
+
+.services__item {
+  position: relative;
+  line-height: 24px;
+}
+
+.services__image-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 22px;
+  box-sizing: border-box;
+}
+
+.services__image {
+  padding-top: 9px;
+  display: block;
+}
+
+.services__toggle {
+  width: 290px;
+  margin-left: 20px;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.services__toggle-back {
+  margin-right: 38px;
+  padding: 8px 47px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    top: 7px;
+    left: 12px;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background-color: #7f38bd;
+  }
+
+  &::after {
+    content: "";
+    top: 4px;
+    left: 1px;
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    background-color: #7f38bd;
+    transform: rotate(-45deg);
+  }
+}
+
+.services__toggle-next {
+  padding: 8px 47px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    top: 7px;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background-color: #7f38bd;
+  }
+
+  &::after {
+    content: "";
+    top: 4px;
+    left: 82px;
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    background-color: #7f38bd;
+    transform: rotate(45deg);
+  }
+}
+
+.services__toggle-title {
+  top: -66px;
+  left: -28px;
+  display: block;
+  position: relative;
+  font-size: 13px;
+}
+
+.services__order {
+  width: 290px;
+  margin: 0 auto;
+  padding: 30px 24px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #7f38bd;
+  box-shadow: 0px 23px 32px 0px #00000025;
+}
+
+.services__order-question {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+  font-size: 13px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.services__order-title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 33px;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.services__order-button {
+  padding: 12px 76px;
+  font-size: 17px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .services__wrapper {
+    width: 780px;
+    padding-bottom: 74px;
+  }
+
+  .services__wrapper-text {
+    padding: 0 30px;
+    padding-top: 10px;
+  }
+
+  .services__title {
+    margin: 0;
+    padding-bottom: 60px;
+  }
+
+  .services__numder {
+    top: 101px;
+    left: 52px;
+  }
+
+  .services__offer {
+    padding-bottom: 55px;
+    font-size: 32px;
+    letter-spacing: 0.6px;
+    line-height: 38px;
+  }
+
+  .services__list {
+    padding-bottom: 23px;
+  }
+
+  .services__image-wrapper {
+    width: 780px;
+    padding-bottom: 11px;
+  }
+
+  .services__image {
+    padding-top: 24px;
+  }
+
+  .services__toggle {
+    margin-left: 4px;
+    padding: 0 25px;
+  }
+
+  .services__toggle-title {
+    top: -41px;
+    left: 571px;
+  }
+
+  .services__order {
+    width: 720px;
+    padding: 37px 37px;
+    padding-top: 33px;
+    padding-right: 32px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .services__order-question {
+    width: 120px;
+    padding-top: 17px;
+    padding-bottom: 10px;
+  }
+
+  .services__order-title {
+    width: 250px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .services__order-button {
+    margin-left: 32px;
+    padding: 12px 79px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services {
+    background-color: #faf8fb;
+  }
+
+  .services__wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 24px;
+    padding-bottom: 64px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &::after {
+      content: "";
+      top: 305px;
+      right: -207px;
+      width: 23px;
+      height: 220px;
+      position: absolute;
+      background-image: url("../img/step3.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .services__wrapper-text {
+    width: 480px;
+    padding: 0;
+    padding-top: 34px;
+
+  }
+
+  .services__title {
+    margin: 0;
+    padding-bottom: 80px;
+  }
+
+  .services__numder {
+    top: 144px;
+    left: -55px;
+  }
+
+  .services__offer {
+    padding-bottom: 45px;
+    font-size: 32px;
+    letter-spacing: 0.6px;
+    line-height: 38px;
+  }
+
+  .services__list {
+    padding-bottom: 23px;
+  }
+
+  .services__image-wrapper {
+    width: 663px;
+    padding-top: 157px;
+    padding-bottom: 0;
+  }
+
+  .services__image {
+    padding-top: 0;
+  }
+
+  .services__toggle {
+    margin-left: 60px;
+    padding: 0 25px;
+  }
+
+  .services__toggle-title {
+    top: -41px;
+    left: 286px;
+  }
+
+  .services__order {
+    top: 550px;
+    left: 23px;
+    width: 463px;
+    padding: 37px 37px;
+    padding-top: 33px;
+    padding-left: 50px;
+    padding-right: 32px;
+    border-radius: 10px;
+    position: absolute;
+    display: block;
+    flex-direction: row;
+  }
+
+  .services__order-question {
+    width: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .services__order-title {
+    width: 250px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+
+  .services__order-button {
+    top: -52px;
+    left: 200px;
+    position: relative;
+    margin-left: 32px;
+    padding: 12px 39px;
+  }
+
+}

@@ -1,0 +1,71 @@
+.info {
+  margin: 0;
+  padding: 45px 15px;
+  padding-bottom: 53px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.info__copyright {
+  font-size: 13px;
+  color: #ffffff;
+  order: 2;
+}
+
+.info__politics {
+  padding-bottom: 38px;
+  font-size: 13px;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.info__developer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    padding: 20px 30px;
+    padding-bottom: 28px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info__copyright {
+    order: 1;
+  }
+
+  .info__politics {
+    padding-bottom: 0px;
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 16px 15px;
+    padding-bottom: 19px;
+    box-sizing: border-box;
+  }
+
+  .info__copyright {
+    order: 1;
+  }
+
+  .info__politics {
+    padding-bottom: 0px;
+    order: 2;
+  }
+
+  .info__developer {
+    display: block;
+    font-size: 13px;
+    color: #ffffff;
+    order: 3;
+  }
+
+}

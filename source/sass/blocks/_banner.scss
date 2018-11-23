@@ -1,0 +1,144 @@
+.banner__wrapper-banner {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  background-color: #faf8fb;
+  background-image: url("../img/banner-mobile@1x.jpg");
+  background-position: 50% 57.6%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner__wrapper {
+  padding: 0;
+  padding-bottom: 284px;
+}
+
+.banner__numder {
+  top: 13px;
+  left: 43px;
+  display: block;
+  position: absolute;
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 200px;
+  font-weight: 900;
+  color: #faf8fb;
+  text-shadow: 0px 0px 21px #0000001e;
+}
+
+.banner__title {
+  margin: 0;
+  padding: 70px 0;
+  padding-bottom: 46px;
+  position: relative;
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 24.9px;
+  font-weight: 500;
+  color: #383d52;
+}
+
+.banner__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.banner__item {
+  padding-bottom: 25px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .banner__wrapper-banner {
+    width: 780px;
+    padding: 0 30px;
+    padding-top: 39px;
+    padding-bottom: 87px;
+    background-image: url("../img/banner-tablet@1x.jpg");
+    background-position: 100% 84.6%;
+  }
+
+  .banner__wrapper {
+    padding: 0;
+    padding-right: 70px;
+    padding-bottom: 40px;
+  }
+
+  .banner__numder {
+    top: 43px;
+    left: 57px;
+  }
+
+  .banner__title {
+    padding: 70px 0;
+    padding-right: 200px;
+    padding-bottom: 46px;
+    font-size: 33px;
+    line-height: 37px;
+  }
+
+  .banner__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+  }
+
+  .banner__item {
+    padding-bottom: 25px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner {
+    padding: 0;
+    background-image: url("../img/banner-desktop@1x.jpg");
+    background-position: 80.9% 0%;
+    background-repeat: no-repeat;
+  }
+
+  .banner__wrapper-banner {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 69px 15px;
+    padding-bottom: 112px;
+    padding-left: 23px;
+    padding-right: 390px;
+    box-sizing: border-box;
+    position: relative;
+    background: none;
+
+    &::before {
+      content: "";
+      top: 315px;
+      right: -206px;
+      width: 23px;
+      height: 220px;
+      position: absolute;
+      background-image: url("../img/step5.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .banner__wrapper {
+    padding-bottom: 80px;
+  }
+
+  .banner__numder {
+    top: 68px;
+    left: -56px;
+  }
+
+  .banner__title {
+    padding-right: 240px;
+  }
+
+  .banner__item {
+    padding-right: 130px;
+  }
+
+}

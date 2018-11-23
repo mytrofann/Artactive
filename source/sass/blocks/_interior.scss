@@ -1,0 +1,137 @@
+.interior__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 70px 15px;
+  padding-bottom: 251px;
+  box-sizing: border-box;
+  background-image: url("../img/interier-mobile@1x.jpg");
+  background-position: 100% 89.2%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.interior__numder {
+  top: 15px;
+  left: 40px;
+  display: block;
+  position: absolute;
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 200px;
+  font-weight: 900;
+  color: #faf8fb;
+  text-shadow: 0px 0px 21px #0000001e;
+}
+
+.interior__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 36px;
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #383d52;
+  position: relative;
+}
+
+.interior__description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 42px;
+  position: relative;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+}
+
+.interior__button {
+  padding: 12px 57px;
+  font-size: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .interior__wrapper {
+    width: 780px;
+    padding: 66px 30px;
+    padding-bottom: 399px;
+    background-image: url("../img/interier-tablet@1x.jpg");
+    background-position: 100% 70.5%;
+  }
+
+  .interior__numder {
+    top: -3px;
+    left: 53px;
+  }
+
+  .interior__title {
+    padding-right: 300px;
+    padding-bottom: 56px;
+    font-size: 33px;
+    line-height: 37px;
+  }
+
+  .interior__description {
+    padding-right: 160px;
+    padding-bottom: 46px;
+    letter-spacing: 0;
+  }
+
+  .interior__button {
+    padding: 12px 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .interior {
+    padding: 0;
+    background-color: #ffffff;
+    background-image: url("../img/interier-desktop@1x.jpg");
+    background-position: 17.8% 49.2%;
+    background-repeat: no-repeat;
+  }
+
+  .interior__wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 130px;
+    padding-bottom: 568px;
+    padding-left: 608px;
+    background: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      top: 404px;
+      right: -206px;
+      width: 23px;
+      height: 220px;
+      position: absolute;
+      background-image: url("../img/step4.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .interior__numder {
+    top: 61px;
+    left: 529px;
+  }
+
+  .interior__title {
+    padding-right: 100px;
+    padding-bottom: 48px;
+    font-size: 33px;
+    line-height: 37px;
+  }
+
+  .interior__description {
+    padding-right: 0px;
+    padding-bottom: 55px;
+    letter-spacing: 0;
+  }
+
+  .interior__button {
+    padding: 12px 32px;
+  }
+
+}

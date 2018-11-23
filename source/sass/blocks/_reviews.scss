@@ -1,0 +1,249 @@
+.reviews__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-top: 34px;
+  padding-bottom: 42px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.reviews__title {
+  display: none;
+}
+
+.reviews__list {
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 61px 20px;
+  padding-bottom: 38px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 0px #00000025;
+}
+
+.reviews__item:nth-child(n+2) {
+  display: none;
+}
+
+.reviews__item-image {
+  margin: 0 45px;
+  padding-bottom: 40px;
+  display: block;
+}
+
+.reviews__description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 37px;
+  line-height: 24px;
+}
+
+.reviews__autor {
+  padding-bottom: 10px;
+  padding-left: 2px;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #383d52;
+}
+
+.reviews__link {
+  padding-bottom: 10px;
+  display: block;
+  font-weight: 600;
+  color: #3594dd;
+}
+
+.reviews__toggle {
+  width: 290px;
+  margin-left: 3px;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.reviews__toggle-back {
+  margin-right: 42px;
+  padding: 8px 47px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    top: 7px;
+    left: 12px;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background-color: #7f38bd;
+  }
+
+  &::after {
+    content: "";
+    top: 4px;
+    left: 1px;
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    background-color: #7f38bd;
+    transform: rotate(-45deg);
+  }
+}
+
+.reviews__toggle-next {
+  padding: 8px 47px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    top: 7px;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background-color: #7f38bd;
+  }
+
+  &::after {
+    content: "";
+    top: 4px;
+    left: 82px;
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    background-color: #7f38bd;
+    transform: rotate(45deg);
+  }
+}
+
+.reviews__toggle-title {
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    width: 780px;
+    padding: 0 30px;
+    padding-top: 6px;
+    padding-bottom: 76px;
+  }
+
+  .reviews__title {
+    display: block;
+    margin: 0;
+    padding: 66px 0;
+    padding-bottom: 57px;
+    font-family: "Muller", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #7f38bd;
+  }
+
+  .reviews__list {
+    margin-bottom: 42px;
+  }
+
+  .reviews__item {
+    padding: 56px 20px;
+    padding-bottom: 20px;
+    display: flex;
+  }
+
+  .reviews__item-image {
+    margin: 5px 45px;
+    padding-bottom: 40px;
+  }
+
+  .reviews__wrapper-text {
+    width: 450px;
+    padding: 0 4px;
+    padding-right: 10px;
+    display: block;
+  }
+
+  .reviews__description {
+    padding-bottom: 11px;
+  }
+
+  .reviews__toggle {
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    background-color: #ffffff;
+  }
+
+  .reviews__wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 23px;
+    padding-top: 66px;
+    padding-bottom: 118px;
+    position: relative;
+
+    &::before {
+      content: "";
+      top: 264px;
+      right: -206px;
+      width: 23px;
+      height: 220px;
+      position: absolute;
+      background-image: url("../img/step6.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .reviews__title {
+    display: block;
+    margin: 0;
+    padding: 66px 0;
+    padding-bottom: 76px;
+  }
+
+  .reviews__list {
+    margin-bottom: 42px;
+    padding: 0 149px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .reviews__item {
+    width: 844px;
+    padding: 56px 60px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+  }
+
+  .reviews__wrapper-text {
+    margin: 0;
+    padding: 0;
+    width: 540px;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .reviews__description {
+    padding-bottom: 10px;
+  }
+
+  .reviews__toggle {
+    margin-left: 146px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,161 @@
+.main-nav {
+  position: relative;
+
+  &--closed .main-nav__toggle {
+    width: 16px;
+    height: 16px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -2px;
+      width: 20px;
+      height: 1px;
+      background-color: #aeaeae;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--opened .main-nav__toggle {
+    top: 23px;
+    left: 278px;
+    width: 27px;
+    height: 16px;
+
+    &::before,
+    &::after {
+      content: "";
+      right: 0;
+      height: 2px;
+      background-color: #ffffff;
+      position: absolute;
+      z-index: 2;
+    }
+
+    &::after {
+      top: 7px;
+      width: 24px;
+      box-shadow: 0 6px 0 0 #ffffff;
+    }
+
+    &::before {
+      top: 1px;
+      width: 24px;
+    }
+  }
+}
+
+.main-nav--js .main-nav__wrapper {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.main-nav__toggle {
+  top: 27px;
+  left: 260px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.main-nav__wrapper {
+  width: 320px;
+  padding-top: 42px;
+  padding-bottom: 133px;
+  padding-left: 68px;
+  display: block;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.main-nav__phone {
+  padding-top: 48px;
+  padding-bottom: 0px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #333333;
+}
+
+.main-nav__button {
+  margin-bottom: 20px;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-size: 11px;
+  font-weight: 800;
+  background-color: #ffffff;
+  color: #fb0275;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav--opened .main-nav__toggle {
+    top: 27px;
+    left: 721px;
+  }
+  .main-nav__toggle {
+    left: 739px;
+  }
+
+  .main-nav__wrapper {
+    width: 780px;
+    padding-left: 548px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav--opened .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    width: 1170px;
+    padding-top: 54px;
+    padding-bottom: 5px;
+    padding-left: 250px;
+    padding-right: 0;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .main-nav__phone {
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: block;
+    color: #ffffff;
+  }
+
+  .main-nav__button {
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    display: block;
+    color: #ffffff;
+    background-color: #6a3094;
+    border-color: #ffffff;
+  }
+}

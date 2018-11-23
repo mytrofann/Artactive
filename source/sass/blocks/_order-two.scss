@@ -1,0 +1,117 @@
+.order-two {
+  width: 290px;
+  margin: 0;
+  padding: 42px 24px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #883eca;
+  background-image: url("../img/faq-mobile@1x.jpg");
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 23px 32px 0px #00000025;
+}
+
+.order-two__question {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.order-two__title {
+  margin: 0;
+  padding: 0;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30.1px;
+  color: #ffffff;
+}
+
+.order-two__form-wrapper {
+  padding-bottom: 7px;
+}
+
+.order-two label {
+  display: none;
+}
+
+.order-two input[type="text"],
+.order-two input[type="tel"] {
+  box-sizing: border-box;
+  width: 242px;
+  padding: 11px 40px 11px 15px;
+  font-style: italic;
+  color: #ffffff;
+  background-color: #883eca;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline: 0;
+}
+
+.order-two__button {
+  margin-top: 19px;
+  margin-bottom: 15px;
+  padding: 12px 68px;
+  font-size: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-two {
+    width: 720px;
+    padding: 42px 35px;
+    padding-bottom: 33px;
+    background-image: url("../img/faq-tablet@1x.jpg");
+    background-position: 100% 0%;
+  }
+
+  .order-two__title {
+    padding-bottom: 17px;
+  }
+
+  .order-two__form {
+    display: flex;
+  }
+
+  .order-two__form-wrapper:nth-child(1) {
+    padding-right: 49px;
+  }
+
+  .order-two__form-wrapper:nth-child(2) {
+    padding-right: 49px;
+  }
+
+  .order-two input[type="text"],
+  .order-two input[type="tel"] {
+    width: 181px;
+  }
+
+  .order-two__button {
+    margin-top: 9px;
+    padding: 12px 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-two {
+    width: 1140px;
+    padding: 42px 35px;
+    padding-left: 311px;
+    padding-bottom: 33px;
+    background-image: url("../img/faq-desktop@1x.jpg");
+  }
+
+  .order-two__form-wrapper:nth-child(1) {
+    padding-right: 39px;
+  }
+
+  .order-two input[type="text"],
+  .order-two input[type="tel"] {
+    width: 241px;
+    background-color: transparent;
+  }
+}
